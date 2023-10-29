@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contas do Mes</title>
+</head>
+<body>
+    <div class="imglogo">
+        <img src="assets/9682020.jpg" alt="logo">
+    </div>
+    <div class="container">
+        <h1>Compras do Mês</h1>
+        <form>
+            <label>
+                Produto:
+                <input type="text" id="inDescricao" autocomplete="on">
+            </label>
+            <label>
+                Valor a Pagar:
+                <input type="number" min="0" step="0.01" id="inValor" required>
+            </label>
+            <input type ="submit" value="Registrar Compra" id="register">
+            
+
+        </form>
+        <pre id="outResp1"></pre>
+        <pre id="outResp2"></pre>
+    </div>
+
+    <script src="contasdomes.js"></script>
+</body>
+</html>
